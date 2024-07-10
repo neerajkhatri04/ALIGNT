@@ -3,6 +3,7 @@
   --clr-light: #fff;
   --clr-slate: #444444;
   --clr-cyan: #68b3b7;
+  --clr-darkcyan: #36999f;
   --clr-lightblue: #e9f3ff;
 }
 
@@ -30,12 +31,10 @@
 
 html,
 body {
-  /* height: 600vh; */
   width: 100%;
   margin: 0;
   padding: 0;
   font-family: "HK Grotesk", sans-serif;
-  color: var(--clr-light);
   overflow-x: hidden;
 }
 
@@ -47,13 +46,12 @@ a {
 #home__main {
   height: 100%;
   width: 100%;
-  /* overflow-x: hidden; */
 }
 
 #hero {
   position: relative;
   width: 100%;
-  background-color: var(--clr-dark);
+  background-color: var(--clr-light);
   padding-bottom: 20px;
 }
 
@@ -66,7 +64,6 @@ a {
   height: 100%;
   background-image: url(images/leaf-pattern.svg);
   background-repeat: no-repeat;
-  opacity: 0.05;
   z-index: 1;
 }
 
@@ -162,7 +159,7 @@ a {
 
 /*****************Numbers section*****************/
 #numbers__section {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-light);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -224,6 +221,7 @@ a {
   font-weight: 100;
   font-weight: lighter;
   text-align: center;
+  opacity: 0.8;
 }
 
 .number__card:hover {
@@ -263,21 +261,14 @@ a {
 }
 
 .methodology__card:hover {
-  background-color: #1e2222;
-}
-
-.methodology__card:hover h5 {
-  color: var(--clr-light);
-}
-.methodology__card:hover p {
-  color: var(--clr-lightblue);
+  background-color: var(--clr-light);
 }
 
 .methodology__card svg {
   font-size: 50px;
   height: 50px;
   width: 50px;
-  fill: var(--clr-cyan);
+  fill: var(--clr-darkcyan);
   margin-bottom: 20px;
 }
 
@@ -298,6 +289,7 @@ a {
   font-weight: 100;
   color: var(--clr-slate);
   line-height: 1.5em;
+  opacity: 0.8;
 }
 
 /*******************Marquee-section*******************/
@@ -341,7 +333,7 @@ a {
 
 /************************Consultation section**************************/
 #consultation__section {
-  background-color: #1c1917;
+  background-color: var(--clr-lightblue);
   /* background-color: #1e2222; */
   display: flex;
   justify-content: space-between;
@@ -367,11 +359,11 @@ a {
 }
 
 .consulation__card:hover {
-  background-color: #1e2222;
+  background-color: var(--clr-light);
 }
 
 .consulation__card svg {
-  fill: var(--clr-lightblue);
+  fill: var(--clr-darkcyan);
   height: 50px;
   margin-bottom: 30px;
 }
@@ -384,11 +376,11 @@ a {
   line-height: 1.5em;
   font-size: 20px;
   font-weight: 100;
-  color: rgb(255, 255, 255);
+  color: var(--clr-slate);
 }
 
 .consulation__card p span {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .consultation__section__right {
@@ -408,6 +400,7 @@ a {
   line-height: 1.5em;
   font-weight: 100;
   margin: 40px 0;
+  opacity: 0.8;
 }
 .consultation__section__right .gradiant__btn {
   width: 100%;
@@ -416,7 +409,7 @@ a {
 /*************************Partners Section******************************/
 
 #partners__section {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-light);
   width: 100%;
   padding: 12vh 10vw;
   display: flex;
@@ -425,7 +418,7 @@ a {
 }
 
 .partners__section__head h1 {
-  color: var(--clr-light);
+  color: var(--clr-dark);
   font-size: 40px;
   line-height: 1.25em;
   font-weight: 500;
@@ -439,6 +432,7 @@ a {
   font-weight: 100;
   text-align: center;
   margin-top: 20px;
+  opacity: 0.8;
 }
 
 .partener__cards {
@@ -457,7 +451,7 @@ a {
 }
 
 .partener__card:hover {
-  background-color: #00eac311;
+  background-color: var(--clr-lightblue);
 }
 
 .partener__card img {
@@ -472,12 +466,13 @@ a {
   font-size: 20px;
   font-weight: 100;
   margin: 10px 0;
+  opacity: 0.8;
 }
 
 .outlined__btn {
   padding: 15px 30px;
-  border: 1px solid var(--clr-light);
-  background-color: var(--clr-lightblue);
+  border: 1px solid var(--clr-dark);
+  background-color: transparent;
   color: var(--clr-dark);
   font-size: 15px;
   cursor: pointer;
@@ -487,7 +482,7 @@ a {
 }
 
 .outlined__btn:hover {
-  background-color: transparent;
+  background-color: var(--clr-dark);
   color: var(--clr-light);
 }
 
@@ -545,15 +540,7 @@ a {
 }
 
 #poc__section .outlined__btn {
-  border: 1px solid var(--clr-dark);
-  background-color: var(--clr-lightblue);
-  color: var(--clr-dark);
   margin-top: 5vh;
-}
-
-#poc__section .outlined__btn:hover {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
 }
 
 /*************************Marquee Section 2******************************/
@@ -587,7 +574,7 @@ a {
   flex-direction: column;
   gap: 10vh;
   align-items: center;
-  background-color: var(--clr-dark);
+  background-color: var(--clr-lightblue);
   min-height: 100vh;
   padding: 12vh 8vw 3vh;
 }
@@ -626,7 +613,7 @@ a {
 }
 
 .contact__details svg {
-  fill: var(--clr-cyan);
+  fill: var(--clr-darkcyan);
   height: 50px;
 }
 
@@ -641,6 +628,7 @@ a {
   font-size: 20px;
   line-height: 1.5em;
   font-weight: 100;
+  color: var(--clr-dark);
 }
 
 .contact__form {
@@ -652,7 +640,7 @@ a {
   z-index: 100;
   height: 100%;
   width: 90%;
-  background-color: #18181b;
+  background-color: var(--clr-darkcyan);
   padding: 30px;
   background-image: url(https://aligntcom.swipepages.media/2020/2/bg-pattern.svg);
   background-size: cover;
@@ -670,9 +658,10 @@ a {
   line-height: 1.5em;
   border: none;
   font-size: 20px;
-  color: var(--clr-light);
-  background-color: transparent;
-  outline: 2px solid var(--clr-cyan);
+  color: var(--clr-dark);
+  background-color: var(--clr-lightblue);
+  border-radius: 5px;
+  outline: none;
   transition: outline 0.2s linear;
 }
 
@@ -680,16 +669,10 @@ a {
   color: #94a3b8;
 }
 
-.contact__form input:focus,
-.contact__form select:focus {
-  outline: 4px solid #d946ef;
-  border-radius: 5px;
-  border: none;
-}
-
-.contact__form select option {
-  color: var(--clr-light);
-  background-color: #18181b;
+.contact__form select,
+.contact__form option {
+  color: var(--clr-darkcyan);
+  background-color: var(--clr-lightblue);
 }
 
 .contact__form button {
@@ -699,6 +682,7 @@ a {
   font-size: 15px;
   text-transform: uppercase;
   background-color: var(--clr-lightblue);
+  color: var(--clr-darkcyan);
   cursor: pointer;
 }
 
