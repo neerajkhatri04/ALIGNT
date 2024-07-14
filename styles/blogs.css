@@ -23,14 +23,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+#home__logo {
+  background-color: var(--clr-lightblue);
+}
+
 #latest__blog {
   background-color: var(--clr-lightblue);
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10vh 18vh;
+  padding: 0 18vh;
 }
 
 #latest__blog__box {

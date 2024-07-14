@@ -243,12 +243,14 @@ function pagination() {
     if ((curPage - 1) * itemsPerPage) {
       curPage--;
       renderBlogCards();
+      document.getElementById("blogs").scrollIntoView({ behavior: "smooth" });
     }
   };
   const nextBtn = () => {
     if ((curPage * itemsPerPage) / blogData.length) {
       curPage++;
       renderBlogCards();
+      document.getElementById("blogs").scrollIntoView({ behavior: "smooth" });
     }
   };
 

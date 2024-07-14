@@ -78,7 +78,8 @@ a {
 #home__logo {
   position: relative;
   left: -15px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  padding: 0 18vh;
 }
 
 .brand__logo {
@@ -608,7 +609,7 @@ a {
 .contact__details p {
   font-size: 20px;
   line-height: 1.5em;
-  font-weight: 100;
+  font-weight: 300;
   margin: 40px 0;
 }
 
@@ -627,7 +628,7 @@ a {
 .contact__link a {
   font-size: 20px;
   line-height: 1.5em;
-  font-weight: 100;
+  font-weight: 300;
   color: var(--clr-dark);
 }
 
@@ -688,7 +689,7 @@ a {
 
 #copyright {
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 10vh;
   color: var(--clr-slate);
 }
