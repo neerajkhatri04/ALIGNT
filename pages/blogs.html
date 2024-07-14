@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/blogs.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Blogs</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="latest__blog">
+        <div id="latest__blog__box">
+          <div id="latest__blog__img__box">
+            <img
+              class="bg-svg"
+              src="https://aligntcom.swipepages.media/2020/2/bg-pattern.svg"
+              alt="bg-svg"
+            />
+            <img
+              class="latest__blog__img"
+              src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="blog-truck-image"
+            />
+          </div>
+          <div id="latest__blog__desc">
+            <h5>latest post</h5>
+            <h1>
+              A new driver shares her experience on entering the trucking
+              industry
+            </h1>
+            <h5>December 28,19 / Trucking</h5>
+            <button class="outlined__btn">Read More</button>
+          </div>
+        </div>
+      </div>
+      <div id="blogs">
+        <div id="filters">
+          <div id="categories">
+            <h4>Categories:</h4>
+            <ul>
+              <li><a href="">Trucks</a></li>
+              <li><a href="">Driving</a></li>
+              <li><a href="">Fulfillment</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Covid-19</a></li>
+            </ul>
+          </div>
+          <div id="search__bar">
+            <i class="ri-search-line"></i><input type="text" placeholder="Search blog..." />
+          </div>
+        </div>
+        <div class="line"></div>
+        <div id="blog__section">
+          <div id="blog__container">
+            <div id="blog__cards"></div>
+            <div style="display: flex; justify-content: center; gap: 3vh">
+              <button class="outlined__btn" id="prev-btn">Prev</button>
+              <button class="outlined__btn" id="next-btn">Next</button>
+            </div>
+          </div>
+
+          <div id="subscription__box">
+            <i class="ri-mail-line"></i>
+            <h1>Get the latest articles delivered to your inbox</h1>
+            <p class="successText" style="color: transparent">Success!</p>
+            <button class="outlined__btn subBtn">Subscribe</button>
+            <div id="stay__updated">
+              <h2>Stay up to date with ALIGNT</h2>
+
+                <ul id="social__media__icons">
+                  <li>
+                      <a href="#">
+                          <div class="heading-container">
+                              <p class="primary">Linkedin</span>
+                              <p class="secondary">Linkedin</span>
+                          </div>
+  
+                          <p class="date"><i class="ri-linkedin-box-fill"></i></p>
+                          <div class="line2"></div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <div class="heading-container">
+                              <p class="primary">Instagram</span>
+                              <p class="secondary">Instagram</span>
+                          </div>
+  
+                          <p class="date"><i class="ri-instagram-fill"></i></p>
+                          <div class="line2"></div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <div class="heading-container">
+                              <p class="primary">Twitter</span>
+                              <p class="secondary">Twitter</span>
+                          </div>
+  
+                          <p class="date"><i class="ri-twitter-x-line"></i></p>
+                          <div class="line2"></div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <div class="heading-container">
+                              <p class="primary">Facebook</span>
+                              <p class="secondary">Facebook</span>
+                          </div>
+  
+                          <p class="date"><i class="ri-facebook-box-fill"></i></p>
+                          <div class="line2"></div>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../scripts/blogs.js"></script>
+  </body>
+</html>
