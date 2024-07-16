@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --clr-dark: #000;
   --clr-light: #fff;
@@ -7,21 +9,21 @@
   --clr-lightblue: #e9f3ff;
 }
 
-@font-face {
+/* @font-face {
   font-family: "HK Grotesk";
   src: url("/assets/fonts/HKGrotesk-Regular.woff2") format("woff2");
-  font-weight: 300; /* or the correct weight for Geist-Light */
+  font-weight: 300; 
 }
 @font-face {
   font-family: "HK Grotesk";
   src: url("/assets/fonts/HKGrotesk-Bold.woff2") format("woff2");
-  font-weight: 700; /* or the correct weight for Geist-Bold */
+  font-weight: 700; 
 }
 @font-face {
   font-family: "HK Grotesk";
   src: url("/assets/fonts/HKGrotesk-SemiBold.woff2") format("woff2");
-  font-weight: 500; /* or the correct weight for Geist-Bold */
-}
+  font-weight: 500; 
+} */
 
 * {
   margin: 0;
@@ -34,18 +36,18 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "HK Grotesk", sans-serif;
   overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--clr-dark);
 }
 
 #home__main {
   height: 100%;
   width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 #hero {
@@ -62,9 +64,10 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(images/leaf-pattern.svg);
+  background-image: url(/ALIGNT/images/leaf-pattern.svg);
   background-repeat: no-repeat;
   z-index: 1;
+  pointer-events: none;
 }
 
 #home__hero__section {
@@ -77,13 +80,32 @@ a {
 
 #home__logo {
   position: relative;
-  left: -15px;
+  z-index: 2;
   /* margin: 0 auto; */
-  padding: 0 18vh;
+  padding: 0 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav__links ul {
+  display: flex;
+  width: 25vw;
+  gap: 30px;
+}
+
+#nav__links li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#nav__links li:hover a {
+  border-bottom: 2px solid #1ec3f0;
 }
 
 .brand__logo {
-  height: 119px;
+  height: clamp(5rem, 3.05rem + 7.8vw, 7.4375rem);
 }
 
 #home__hero__top {
@@ -103,11 +125,11 @@ a {
   margin-bottom: 20px;
 }
 
-#home__hero__left p {
+#home__main p {
   font-size: 20px;
   line-height: 1.5;
   margin: 0px 0px 35px 0px;
-  font-weight: 100;
+  font-weight: 300;
   color: var(--clr-slate);
 }
 
@@ -183,7 +205,7 @@ a {
   color: var(--clr-cyan);
   margin-bottom: 5px;
   line-height: 1.5;
-  font-weight: 100;
+  font-weight: 300;
   background: linear-gradient(
     145deg,
     hsl(240deg 100% 20%) 0%,
@@ -217,10 +239,6 @@ a {
 }
 
 .number__card p {
-  font-size: 20px;
-  color: var(--clr-slate);
-  font-weight: 100;
-  font-weight: lighter;
   text-align: center;
   opacity: 0.8;
 }
@@ -286,10 +304,6 @@ a {
 }
 
 .methodology__card p {
-  font-size: 20px;
-  font-weight: 100;
-  color: var(--clr-slate);
-  line-height: 1.5em;
   opacity: 0.8;
 }
 
@@ -373,13 +387,6 @@ a {
   cursor: pointer;
 }
 
-.consulation__card p {
-  line-height: 1.5em;
-  font-size: 20px;
-  font-weight: 100;
-  color: var(--clr-slate);
-}
-
 .consulation__card p span {
   font-weight: 600;
 }
@@ -397,9 +404,6 @@ a {
   font-weight: 500;
 }
 .consultation__section__right p {
-  font-size: 20px;
-  line-height: 1.5em;
-  font-weight: 100;
   margin: 40px 0;
   opacity: 0.8;
 }
@@ -427,10 +431,6 @@ a {
 }
 
 .partners__section__head p {
-  color: var(--clr-slate);
-  font-size: 20px;
-  line-height: 1.5em;
-  font-weight: 100;
   text-align: center;
   margin-top: 20px;
   opacity: 0.8;
@@ -463,9 +463,6 @@ a {
 }
 
 .partener__card p {
-  line-height: 1.5em;
-  font-size: 20px;
-  font-weight: 100;
   margin: 10px 0;
   opacity: 0.8;
 }
@@ -532,10 +529,6 @@ a {
 }
 
 #poc__section p {
-  color: var(--clr-slate);
-  font-size: 20px;
-  line-height: 1.2em;
-  font-weight: 100;
   margin: 5px 0;
   width: 100%;
 }

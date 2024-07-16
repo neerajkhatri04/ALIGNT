@@ -2,20 +2,23 @@ const blogData = [
   {
     id: 1,
     imgUrl:
-      "https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Driver eligibility for free Covid-19 vaccination",
+      "https://images.unsplash.com/photo-1610018556010-6a11691bc905?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title:
+      "Maximizing Customer Insights with RFM Segmentation: A Step-by-Step Guide",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, dolorum eligendi porro aperiam beatae ratione quisquam repudiandae placeat ipsa rem quaerat consectetur facilis dolor aliquam cum consequuntur quis adipisci reiciendis itaque officiis!",
-    date: "December 28, 2019",
+      "In the competitive world of business, understanding your customers' buying behaviors is crucial. One highly effective method for gaining this understanding is RFM segmentation.",
+    date: "July 15, 2024",
+    blogLink: "blogPage2.html",
   },
   {
     id: 2,
     imgUrl:
-      "https://plus.unsplash.com/premium_photo-1719850361637-b9514dfbee5b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "A loopback truck drive appreciation week",
+      "https://images.unsplash.com/photo-1667372283545-1261fb5c427a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Transforming Data with DBT: A Comprehensive Guide",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, dolorum eligendi porro aperiam beatae ratione quisquam repudiandae placeat ipsa rem quaerat consectetur facilis dolor aliquam cum consequuntur quis adipisci reiciendis itaque officiis!",
-    date: "March 06, 2024",
+      "In the world of data analytics, transforming raw data into actionable insights is a crucial step. Data Build Tool (DBT) has emerged as a powerful solution to simplify and enhance this transformation process.",
+    date: "December 28, 2019",
+    blogLink: "blogPage.html",
   },
   {
     id: 3,
@@ -193,12 +196,19 @@ function renderBlogCards() {
 
   curItems.forEach((item) => {
     blogCards.innerHTML += ` <div class="blog__card">
-              <img
-                src=${item.imgUrl}
-                alt="blog-img"
-              />
+              <div class="blog__image__container">
+                <a href=${item?.blogLink ? item.blogLink : ""}>
+                <img
+                  class="blog__image"
+                  src=${item.imgUrl}
+                  alt="blog-img"
+                />
+              </a>
+              </div>
               <h1 class="blog__title">
-                ${item.title}
+                <a href=${item?.blogLink ? item.blogLink : ""}>
+                  ${item.title}
+                </a>
               </h1>
               <p class="blog__desc">
                 ${item.description.slice(0, 100)}...
