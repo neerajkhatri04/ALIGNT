@@ -64,7 +64,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/ALIGNT/images/leaf-pattern.svg);
+  background-image: url(../images/leaf-pattern.svg);
   background-repeat: no-repeat;
   z-index: 1;
   pointer-events: none;
