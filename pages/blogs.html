@@ -10,37 +10,69 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../styles/blogs.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <title>Blogs</title>
   </head>
   <body>
-    <div id="main">
-      <div id="home__logo">
-        <a href="../">
-          <img
-          class="brand__logo"
-          src="../images/alignt-logo.webp"
-          alt="alignt-logo"
-        />
-        </a>
-        <div id="nav__links">
-          <ul>
-            <!-- <li>
-              <a style="color: black" href="../">Home</a>
-            </li> -->
-            <li>
-              <a style="color: black" href="blogs.html">Blog</a>
-            </li>
-            <!-- <li>
-              <a style="color: black" href="blogs.html">Feature</a>
-            </li>
-            <li>
-              <a style="color: black" href="blogs.html">Service</a>
-            </li> -->
-          </ul>
+    <div id="blog__main">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../">
+            <img
+              class="brand__logo"
+              src="../images/alignt-logo.webp"
+              alt="alignt-logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <i class="ri-menu-2-line"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                ALIGNT
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-2 gap-lg-5"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./blogs.html"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
       <div id="latest__blog">
         <div id="latest__blog__box">
           <div id="latest__blog__img__box">
@@ -130,7 +162,7 @@
                               <p class="secondary">Twitter</span>
                           </div>
   
-                          <p class="date"><i class="ri-twitter-x-line"></i></p>
+                          <p class="date"><i class="ri-twitter-x-line" style="font-size: 30px;"></i></p>
                           <div class="line2"></div>
                       </a>
                   </li>

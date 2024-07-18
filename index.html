@@ -4,34 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALIGNT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <div id="home__main">
       <div id="hero">
-        <div id="home__logo">
-          <img
-            class="brand__logo"
-            src="images/alignt-logo.webp"
-            alt="alignt-logo"
-          />
-          <div id="nav__links">
-            <ul>
-              <!-- <li>
-                <a style="color: black" href="./">Home</a>
-              </li> -->
-              <li>
-                <a style="color: black" href="./pages/blogs.html">Blog</a>
-              </li>
-              <!-- <li>
-                <a style="color: black" href="./pages/blogs.html">Feature</a>
-              </li>
-              <li>
-                <a style="color: black" href="./pages/blogs.html">Service</a>
-              </li> -->
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./">
+              <img
+                class="brand__logo"
+                src="images/alignt-logo.webp"
+                alt="alignt-logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <i class="ri-menu-2-line"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  ALIGNT
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-2 gap-lg-5"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./pages/blogs.html"
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+        </nav>
         <div id="home__hero__section">
           <div id="home__hero__top">
             <div id="home__hero__left">
@@ -135,16 +176,12 @@
         <div class="marquees">
           <img src="images/hershey-logo-300.webp" alt="hershey-logo" />
           <img src="images/national-defence.webp" alt="national-defence" />
-          <img src="images/coinme_logo.svg" alt="coinme-logo" />
           <img src="images/quarles.webp" alt="quarles-logo" />
-          <img src="images/duobank-logo_m-cropped.webp" alt="duobank-logo" />
         </div>
         <div class="marquees">
           <img src="images/hershey-logo-300.webp" alt="hershey-logo" />
           <img src="images/national-defence.webp" alt="national-defence" />
-          <img src="images/coinme_logo.svg" alt="coinme-logo" />
           <img src="images/quarles.webp" alt="quarles-logo" />
-          <img src="images/duobank-logo_m-cropped.webp" alt="duobank-logo" />
         </div>
       </div>
       <div id="consultation__section">

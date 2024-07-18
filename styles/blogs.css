@@ -31,10 +31,14 @@ body {
   overflow-x: hidden;
 }
 
-#main {
+#blog__main {
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
+}
+
+#blog__main .navbar {
+  background: var(--clr-lightblue);
 }
 
 #home__logo {
@@ -46,7 +50,7 @@ body {
   background-color: var(--clr-lightblue);
   width: 100%;
   min-height: 100vh;
-  padding: 0 18vh;
+  padding: 0 18vh 0;
 }
 
 #latest__blog__box {
@@ -91,7 +95,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2vh;
+  gap: 1vh;
+  /* padding-top: 30px; */
 }
 
 #latest__blog__desc h5 {
@@ -106,7 +111,7 @@ body {
   font-size: clamp(40px, 70px, 80px);
   font-weight: 500;
   margin-bottom: 10px;
-  line-height: 75px;
+  line-height: 70px;
 }
 
 /***************Blogs*****************/
@@ -244,7 +249,7 @@ body {
 
 #subscription__box {
   width: 30%;
-  height: 100%;
+  height: fit-content;
   padding: 3vh;
   display: flex;
   flex-direction: column;
@@ -282,18 +287,21 @@ body {
 #social__media__icons a {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: var(--clr-dark);
   text-decoration: none;
   padding: 0 30px;
+  height: 50px;
   overflow: hidden;
   position: relative;
 }
 #social__media__icons a .heading-container {
   overflow: hidden;
-  height: fit-content;
+  height: 40px;
   line-height: 25px;
   display: grid;
   place-content: center;
+  align-items: center;
 }
 #social__media__icons a p.primary,
 #social__media__icons a p.secondary {
@@ -302,14 +310,17 @@ body {
 }
 #social__media__icons a p.primary {
   transform: translateY(50%);
+  margin: 0;
 }
 
 #social__media__icons a p.secondary {
   transform: translateY(100%);
+  margin: 0;
 }
 
 #social__media__icons a p.date {
   transform: translateY(200%);
+  margin: 0;
 }
 #social__media__icons a .line2 {
   position: absolute;
