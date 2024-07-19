@@ -76,6 +76,30 @@ a {
   font-size: 40px;
 }
 
+.nav-link {
+  position: relative;
+  padding: 0 2px 5px !important;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  border-radius: 2px;
+  width: 0;
+  visibility: hidden;
+  background-color: #0065a3;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
 #hero {
   position: relative;
   width: 100%;
@@ -662,7 +686,7 @@ a {
   width: 90%;
   background-color: var(--clr-darkcyan);
   padding: 30px;
-  background-image: url(https://aligntcom.swipepages.media/2020/2/bg-pattern.svg);
+  background-image: url(../images/bg-pattern.svg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
