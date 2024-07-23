@@ -1,7 +1,7 @@
 const blogData = [
   {
     id: 1,
-    imgUrl: "../images/topic2-image.png",
+    imgUrl: "../images/topic1-image.jpeg",
     title:
       "Maximizing Customer Insights with RFM Segmentation: A Step-by-Step Guide",
     description:
@@ -11,7 +11,7 @@ const blogData = [
   },
   {
     id: 2,
-    imgUrl: "../images/topic1-image.png",
+    imgUrl: "../images/topic2-image.png",
     title: "Transforming Data with DBT: A Comprehensive Guide",
     description:
       "In the world of data analytics, transforming raw data into actionable insights is a crucial step. Data Build Tool (DBT) has emerged as a powerful solution to simplify and enhance this transformation process.",

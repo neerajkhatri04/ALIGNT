@@ -379,7 +379,7 @@ a {
 
 .marquees img {
   display: inline-block;
-  margin: 0 100px; /* Adjust the margin as needed */
+  margin: 0 120px; /* Adjust the margin as needed */
   height: 50px;
 }
 
