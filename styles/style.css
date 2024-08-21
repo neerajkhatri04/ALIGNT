@@ -25,6 +25,20 @@
   font-weight: 500; 
 } */
 
+/********Custom scrollbar***********/
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-lightblue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0065a1;
+}
+
 * {
   margin: 0;
   padding: 0;
